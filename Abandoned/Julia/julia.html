@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>My Pets</title>
+	<link rel="stylesheet" href="julia.css">
+	<script src="julia.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<div id="heading">
+			<div id="title">
+				<h1>My Pets</h1>
+			</div>
+			<div id="name">
+				Designed by Julia Lange-Soler
+			</div>
+		</div>
+		
+		<div id="gallery" class="cell">
+			<div class="topRow">
+				<h2 class="caption">Gallery</h2>
+				<img id="fullscreenButton" alt="Fullscreen button" title="fullscreen" src="images/fullscreenButton.png" onclick="fullscreenGallery()">
+			</div>
+			<div class="galleryContent">
+				<img id="photo0" class="photo" alt="Pet photos" title="Pippa" src="https://via.placeholder.com/1600x900?text=Pippa1">
+				<img id="photo1" class="photo" alt="Pet photos" title="Pippa" src="https://via.placeholder.com/640x900?text=Pippa2">
+				<img id="photo2" class="photo" alt="Pet photos" title="Pippa" src="https://via.placeholder.com/100x90?text=Pippa3">
+				<img id="photo3" class="photo" alt="Pet photos" title="Diamond" src="https://via.placeholder.com/1400x904?text=Diamond1">
+				<img id="photo4" class="photo" alt="Pet photos" title="Diamond" src="https://via.placeholder.com/1600x900?text=Diamond2">
+				<img id="photo5" class="photo" alt="Pet photos" title="Whiskers" src="https://via.placeholder.com/1630x900?text=Whiskers1">
+				<img id="photo6" class="photo" alt="Pet photos" title="Whiskers" src="https://via.placeholder.com/1600x900?text=Whiskers2">
+				<img id="photo7" class="photo" alt="Pet photos" title="Whiskers" src="https://via.placeholder.com/1200x700?text=Whiskers3">
+				<img id="photo8" class="photo" alt="Pet photos" title="Whiskers" src="https://via.placeholder.com/1600x600?text=Whiskers4">
+				<img id="photo9" class="photo" alt="Pet photos" title="Whiskers" src="https://via.placeholder.com/1200x900?text=Whiskers5">
+				
+				<div id="lastPhotoButton" class="photoButton" alt="Last photo button" title="previous" onclick="lastPhoto()">
+					<img class="photoButtonImg" src="images/arrow.png">
+				</div>
+				<div id="nextPhotoButton" class="photoButton" alt="Next photo button" title="next" onclick="nextPhoto()">
+					<img class="photoButtonImg" src="images/arrow.png" style="transform:scaleX(-1)">
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<content>
+		<div id="pippa" class="cell">
+			<div class="topRow">
+				<h2 class="caption">Pippa</h2>
+			</div>
+			<div class="cellContent">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam vehicula tempus. Morbi mollis tortor et justo pretium, at dictum dui imperdiet. Etiam semper ligula vitae mi blandit, quis porta odio fringilla. Etiam dictum mi sapien. Curabitur in vestibulum felis. Curabitur elit elit, rutrum sed orci ac, congue auctor purus. Aliquam erat volutpat. Nulla non hendrerit metus. Sed sit amet sagittis nisi. Nam lobortis id massa a pharetra. Pellentesque eleifend pharetra turpis sit amet ornare. Nam tristique blandit aliquet.</p>
+				<p>Nunc nisl nulla, condimentum id posuere eget, congue eu lorem. Proin rutrum congue auctor. In finibus nunc non leo fringilla tincidunt. Morbi risus leo, condimentum ac aliquam non, tempor ut est. Curabitur non mi pellentesque, porta orci quis, facilisis justo. Donec fermentum, lorem eu porttitor imperdiet, enim nibh condimentum eros, sed finibus turpis nisi sed nunc. Maecenas iaculis orci velit, consequat suscipit nibh aliquam eget. Nullam vel mattis neque. Aliquam auctor, augue vel faucibus posuere, mi nisl mattis metus, vitae consequat metus libero id metus. Curabitur porta felis ac felis porta, a sodales est malesuada. In fringilla pulvinar condimentum. Nullam rhoncus nisl in purus hendrerit, eget auctor orci finibus. In fermentum ex sagittis quam sollicitudin, sit amet luctus libero placerat. Sed aliquet, odio eu semper condimentum, erat tortor sodales augue, non porta erat mi vitae lectus. Phasellus eros erat, porttitor et fringilla a, molestie sit amet nunc.</p>
+			</div>
+		</div>
+		
+		<div id="diamondAndWhiskers">
+			<div id="diamond" class="cell">
+				<div class="topRow">
+					<h2 class="caption">Diamond</h2>
+				</div>
+				<div class="cellContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat odio augue, quis gravida lacus ultrices non. Integer et bibendum sem, tempor ullamcorper metus. Vivamus efficitur nisi vel pellentesque iaculis. Duis rhoncus euismod metus. Nullam imperdiet tempus est quis euismod. Nulla lacinia lectus sem. Etiam congue dolor in ligula egestas cursus. Phasellus elementum, nunc ac venenatis ullamcorper, lorem risus condimentum leo, id vestibulum risus orci non purus. Integer nec massa in elit convallis auctor. In felis dui, feugiat eget euismod ac, consequat vitae augue. Proin pharetra ex eget pellentesque efficitur. Nam vitae laoreet risus.</p>
+				</div>
+			</div>
+
+			<div id="whiskers" class="cell">
+				<div class="topRow">
+					<h2 class="caption">Whiskers</h2>
+				</div>
+				<div class="cellContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel tincidunt lorem. Praesent et dignissim dolor. Etiam eleifend rutrum bibendum. Donec tortor odio, faucibus at ipsum sed, vestibulum rhoncus quam. Sed vestibulum purus lectus, a eleifend augue cursus quis. Morbi pharetra eros nec elit rhoncus, ac commodo augue ultricies. Nunc congue, sem ut iaculis porta, tortor orci sollicitudin ex, eget imperdiet turpis justo et erat. Sed tincidunt mauris vel mi elementum lacinia. Mauris volutpat, nulla et volutpat vulputate, libero magna suscipit massa, sed imperdiet odio tortor egestas metus. Maecenas non orci ex. Donec faucibus turpis eget est tempor, id ullamcorper erat vestibulum. Mauris ipsum ligula, venenatis sit amet justo sit amet, vulputate commodo velit. Etiam justo orci, varius a lorem non, volutpat bibendum nibh. In tempus lacus in posuere auctor. Phasellus sollicitudin sem ac ligula semper, eu malesuada mi viverra. Aenean a efficitur nunc.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="games" class="cell">
+			<div class="topRow">
+				<h2 class="caption">Games</h2>
+			</div>
+			<div id="gameContent" class="cellContent">
+				<img class="game" src="https://via.placeholder.com/300x300">
+				<img class="game" src="https://via.placeholder.com/300x300">
+				<img class="game" src="https://via.placeholder.com/300x300">
+			</div>
+		</div>
+	</content>
+</body>
+
+</html>

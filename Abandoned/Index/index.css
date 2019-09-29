@@ -1,0 +1,20 @@
+body {
+	margin:0px;
+	overflow:hidden;
+}
+table {
+	border-collapse:collapse;
+}
+tr:first-child {
+	border-bottom:1px solid black;
+}
+td:first-child {
+	border-right:1px solid black;
+}
+td {
+	padding:0px;
+}
+img {
+	width:50vw;
+	height:50vh;
+}
